@@ -1,0 +1,27 @@
+{
+  "name": "overlay-navbar",
+  "version": "1.0.0",
+  
+  "description": "This is a animated overlay navbar created by @meabhisingh aka 6 pack programmer",
+  "main": "ReactNavbar.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meabhisingh/overlay-navbar.git"
+  },
+  "keywords": [
+    "overlay-navbar",
+    "animated-navbar",
+    "meabhisingh",
+    "6-pack-programmer"
+  ],
+  "author": "@meabhisingh",
+  "license": "ISC",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/meabhisingh/overlay-navbar/issues"
+  },
+  "homepage": "https://github.com/meabhisingh/overlay-navbar#readme"
+}
