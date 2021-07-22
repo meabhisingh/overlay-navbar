@@ -17,10 +17,12 @@ const ReactNavbar = ({
   logoHoverColor = "green",
   logoTransition = 0.5,
   logoAnimationTime = 1,
+
   nav1FlexDirection = "row",
   nav2FlexDirection = "row",
   nav3FlexDirection = "row",
   nav4FlexDirection = "row",
+
   nav1alignItems = "center",
   nav1justifyContent = "center",
   nav2alignItems = "center",
@@ -29,6 +31,12 @@ const ReactNavbar = ({
   nav3justifyContent = "center",
   nav4alignItems = "center",
   nav4justifyContent = "center",
+
+  nav1Transition = 0.4,
+  nav2Transition = nav1Transition + 0.4,
+  nav3Transition = nav2Transition + 0.4,
+  nav4Transition = nav3Transition + 0.4,
+
   link1Text = "Text 1",
   link2Text = "Text 2",
   link3Text = "Text 3",
@@ -252,6 +260,7 @@ const ReactNavbar = ({
             flexDirection: nav1FlexDirection,
             alignItems: nav1alignItems,
             justifyContent: nav1justifyContent,
+            transition: `all ${nav1Transition}s`,
           }}
         >
           <img
@@ -280,6 +289,7 @@ const ReactNavbar = ({
             flexDirection: nav2FlexDirection,
             alignItems: nav2alignItems,
             justifyContent: nav2justifyContent,
+            transition: `all ${nav2Transition}s`,
           }}
         >
           <Link
@@ -335,6 +345,7 @@ const ReactNavbar = ({
             flexDirection: nav3FlexDirection,
             alignItems: nav3alignItems,
             justifyContent: nav3justifyContent,
+            transition: `all ${nav3Transition}s`,
           }}
         >
           <Link
@@ -390,6 +401,7 @@ const ReactNavbar = ({
             flexDirection: nav4FlexDirection,
             alignItems: nav4alignItems,
             justifyContent: nav4justifyContent,
+            transition: `all ${nav4Transition}s`,
           }}
         >
           {searchIcon ? (

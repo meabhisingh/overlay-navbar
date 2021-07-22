@@ -56,19 +56,15 @@ body {
   display: flex;
 }
 .nav1 {
-  transition: all 0.4s;
   left: 0%;
 }
 .nav2 {
-  transition: all 0.8s;
   left: 25%;
 }
 .nav3 {
-  transition: all 1s;
   left: 50%;
 }
 .nav4 {
-  transition: all 1.5s;
   left: 75%;
 }
 

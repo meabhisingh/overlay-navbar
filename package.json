@@ -1,6 +1,6 @@
 {
   "name": "overlay-navbar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   
   "description": "This is a animated overlay navbar created by @meabhisingh aka 6 pack programmer",
   "main": "ReactNavbar.js",
