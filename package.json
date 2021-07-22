@@ -1,0 +1,36 @@
+{
+  "name": "overlay-navbar",
+  "version": "1.0.3",
+  "description": "This is a animated overlay navbar created by @meabhisingh aka 6 pack programmer",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "private": "false",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf dist",
+    "build": "cross-env NODE_ENV=production babel src --out-dir dist --copy-files"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "overlay-navbar",
+    "animated-navbar",
+    "meabhisingh",
+    "6-pack-programmer"
+  ],
+  "author": "@meabhisingh",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-react": "^7.14.5",
+    "cross-env": "^7.0.3",
+    "rimraf": "^3.0.2"
+  }
+}
