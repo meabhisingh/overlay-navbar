@@ -1,11 +1,10 @@
 {
   "name": "overlay-navbar",
-<<<<<<< HEAD
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This is a animated overlay navbar created by @meabhisingh aka 6 pack programmer",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "private": "false",
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rimraf dist",
@@ -15,19 +14,6 @@
     "dist",
     "README.md"
   ],
-=======
-  "version": "1.0.2",
-  
-  "description": "This is a animated overlay navbar created by @meabhisingh aka 6 pack programmer",
-  "main": "ReactNavbar.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/meabhisingh/overlay-navbar.git"
-  },
->>>>>>> 0728b70c9707f3f01bb66aa364bb7bbf9357e916
   "keywords": [
     "overlay-navbar",
     "animated-navbar",
@@ -36,7 +22,6 @@
   ],
   "author": "@meabhisingh",
   "license": "ISC",
-<<<<<<< HEAD
   "devDependencies": {
     "@babel/cli": "^7.14.8",
     "@babel/core": "^7.14.8",
@@ -48,11 +33,4 @@
     "cross-env": "^7.0.3",
     "rimraf": "^3.0.2"
   }
-=======
-  "private": false,
-  "bugs": {
-    "url": "https://github.com/meabhisingh/overlay-navbar/issues"
-  },
-  "homepage": "https://github.com/meabhisingh/overlay-navbar#readme"
->>>>>>> 0728b70c9707f3f01bb66aa364bb7bbf9357e916
 }
