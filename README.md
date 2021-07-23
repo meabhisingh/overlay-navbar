@@ -64,6 +64,10 @@ add ReactNavbar Component in your file while passing appropriate props
 | nav2justifyContent       | `"center"`                         | "To set Justify Content of second nav section"                       |
 | nav3justifyContent       | `"center"`                         | "To set Justify Content of third nav section"                        |
 | nav4justifyContent       | `"center"`                         | "To set Justify Content of fourth nav section"                       |
+|  nav1Transition       | `0.4`                         | "To set Transition of first nav section"                       |
+|  nav2Transition       | `nav1Transition + 0.4`                         | "To set Transition of second nav section"                       |
+|  nav3Transition       | `nav2Transition + 0.4`                         | "To set Transition of third nav section"                       |
+|  nav4Transition       | `nav3Transition + 0.4`                         | "To set Transition of fourth nav section"                       |
 | link1Text                | `"Text 1"`                         | "To set the Text of first Link"                                      |
 | link2Text                | `"Text 2"`                         | "To set the Text of second Link"                                     |
 | link3Text                | `"Text 3"`                         | "To set the Text of third Link"                                      |
