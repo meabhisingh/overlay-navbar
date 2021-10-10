@@ -1,5 +1,7 @@
 "use strict";
 
+require("core-js/modules/esnext.weak-map.delete-all.js");
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });

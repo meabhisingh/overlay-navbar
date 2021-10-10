@@ -12,4 +12,8 @@ Object.defineProperty(exports, "ReactNavbar", {
 
 var _ReactNavbar = _interopRequireDefault(require("./lib/ReactNavbar"));
 
+require("core-js/stable");
+
+require("regenerator-runtime/runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
