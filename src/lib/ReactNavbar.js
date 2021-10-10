@@ -143,6 +143,13 @@ const ReactNavbar = ({
     setMenuToggle(true);
   };
 
+  const closeBarOnClick = () => {
+    menuBurgerItem1.current.classList.remove("menuBurgerItem1");
+    menuBurgerItem2.current.classList.remove("menuBurgerItem2");
+    menuBurgerItem3.current.classList.remove("menuBurgerItem3");
+    return setMenuToggle(false);
+  };
+
   useEffect(() => {
     menuBurger.current.addEventListener("mouseover", () => {
       menuBurgerItem1.current.style.backgroundColor = burgerColorHover;
@@ -310,6 +317,7 @@ const ReactNavbar = ({
                 : `LinkOut ${link1AnimationTime}s`,
             }}
             to={link1Url}
+            onClick={closeBarOnClick}
           >
             {link1Text}
           </Link>
@@ -331,6 +339,7 @@ const ReactNavbar = ({
                 : `LinkOut ${link2AnimationTime}s`,
             }}
             to={link2Url}
+            onClick={closeBarOnClick}
           >
             {link2Text}
           </Link>
@@ -366,6 +375,7 @@ const ReactNavbar = ({
                 : `LinkOut ${link3AnimationTime}s`,
             }}
             to={link3Url}
+            onClick={closeBarOnClick}
           >
             {link3Text}
           </Link>
@@ -387,6 +397,7 @@ const ReactNavbar = ({
                 : `LinkOut ${link4AnimationTime}s`,
             }}
             to={link4Url}
+            onClick={closeBarOnClick}
           >
             {link4Text}
           </Link>
@@ -405,7 +416,7 @@ const ReactNavbar = ({
           }}
         >
           {searchIcon ? (
-            <Link to={searchIconUrl}>
+            <Link to={searchIconUrl} onClick={closeBarOnClick}>
               <ImSearch
                 id="searchIcon"
                 style={{
@@ -423,7 +434,7 @@ const ReactNavbar = ({
             ""
           )}
           {cartIcon ? (
-            <Link to={cartIconUrl}>
+            <Link to={cartIconUrl} onClick={closeBarOnClick}>
               <FiShoppingBag
                 id="cartIcon"
                 style={{
@@ -441,7 +452,7 @@ const ReactNavbar = ({
             ""
           )}
           {profileIcon ? (
-            <Link to={profileIconUrl}>
+            <Link to={profileIconUrl} onClick={closeBarOnClick}>
               <RiAccountBoxFill
                 id="profileIcon"
                 style={{

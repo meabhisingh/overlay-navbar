@@ -152,6 +152,13 @@ const ReactNavbar = _ref => {
     setMenuToggle(true);
   };
 
+  const closeBarOnClick = () => {
+    menuBurgerItem1.current.classList.remove("menuBurgerItem1");
+    menuBurgerItem2.current.classList.remove("menuBurgerItem2");
+    menuBurgerItem3.current.classList.remove("menuBurgerItem3");
+    return setMenuToggle(false);
+  };
+
   (0, _react.useEffect)(() => {
     menuBurger.current.addEventListener("mouseover", () => {
       menuBurgerItem1.current.style.backgroundColor = burgerColorHover;
@@ -295,7 +302,8 @@ const ReactNavbar = _ref => {
       transition: "all ".concat(link1Transition, "s"),
       animation: menuToggle ? "LinkIn ".concat(link1AnimationTime, "s") : "LinkOut ".concat(link1AnimationTime, "s")
     },
-    to: link1Url
+    to: link1Url,
+    onClick: closeBarOnClick
   }, link1Text), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     className: "linksReactNavbar",
     ref: link2,
@@ -311,7 +319,8 @@ const ReactNavbar = _ref => {
       transition: "all ".concat(link2Transition, "s"),
       animation: menuToggle ? "LinkIn ".concat(link2AnimationTime, "s") : "LinkOut ".concat(link2AnimationTime, "s")
     },
-    to: link2Url
+    to: link2Url,
+    onClick: closeBarOnClick
   }, link2Text)), /*#__PURE__*/_react.default.createElement("div", {
     className: "nav3",
     style: {
@@ -337,7 +346,8 @@ const ReactNavbar = _ref => {
       transition: "all ".concat(link3Transition, "s"),
       animation: menuToggle ? "LinkIn ".concat(link3AnimationTime, "s") : "LinkOut ".concat(link3AnimationTime, "s")
     },
-    to: link3Url
+    to: link3Url,
+    onClick: closeBarOnClick
   }, link3Text), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     className: "linksReactNavbar",
     ref: link4,
@@ -353,7 +363,8 @@ const ReactNavbar = _ref => {
       transition: "all ".concat(link4Transition, "s"),
       animation: menuToggle ? "LinkIn ".concat(link4AnimationTime, "s") : "LinkOut ".concat(link4AnimationTime, "s")
     },
-    to: link4Url
+    to: link4Url,
+    onClick: closeBarOnClick
   }, link4Text)), /*#__PURE__*/_react.default.createElement("div", {
     className: "nav4",
     style: {
@@ -365,7 +376,8 @@ const ReactNavbar = _ref => {
       transition: "all ".concat(nav4Transition, "s")
     }
   }, searchIcon ? /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: searchIconUrl
+    to: searchIconUrl,
+    onClick: closeBarOnClick
   }, /*#__PURE__*/_react.default.createElement(_all.ImSearch, {
     id: "searchIcon",
     style: {
@@ -376,7 +388,8 @@ const ReactNavbar = _ref => {
     fontSize: searchIconSize,
     color: searchIconColor
   })) : "", cartIcon ? /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: cartIconUrl
+    to: cartIconUrl,
+    onClick: closeBarOnClick
   }, /*#__PURE__*/_react.default.createElement(_all.FiShoppingBag, {
     id: "cartIcon",
     style: {
@@ -387,7 +400,8 @@ const ReactNavbar = _ref => {
     fontSize: cartIconSize,
     color: cartIconColor
   })) : "", profileIcon ? /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    to: profileIconUrl
+    to: profileIconUrl,
+    onClick: closeBarOnClick
   }, /*#__PURE__*/_react.default.createElement(_all.RiAccountBoxFill, {
     id: "profileIcon",
     style: {
