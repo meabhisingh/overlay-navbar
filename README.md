@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-﻿
-=======
-
->>>>>>> 09f5c10897b003ec3795f980c86129a30fac9702
-﻿**[overlay-navbar](https://github.com/meabhisingh/overlay-navbar)**
+**[overlay-navbar](https://github.com/meabhisingh/overlay-navbar)**
 
 ##### Navbar component built with React.
 
