@@ -15,8 +15,6 @@ require("./ReactNavbar.min.css");
 
 var _reactRouterDom = require("react-router-dom");
 
-var _all = require("react-icons/all");
-
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -104,7 +102,8 @@ const ReactNavbar = _ref => {
     link2AnimationTime = link1AnimationTime + 0.5,
     link3AnimationTime = link2AnimationTime + 0.5,
     link4AnimationTime = link3AnimationTime + 0.5,
-    searchIcon = true,
+    searchIcon = false,
+    SearchIconElement,
     searchIconMargin = "0",
     searchIconUrl = "/Search",
     searchIconSize = "2vmax",
@@ -112,7 +111,8 @@ const ReactNavbar = _ref => {
     searchIconColorHover = searchIconColor,
     searchIconTransition = 0.5,
     searchIconAnimationTime = 2,
-    cartIcon = true,
+    cartIcon = false,
+    CartIconElement,
     cartIconMargin = "0",
     cartIconUrl = "/Cart",
     cartIconSize = "2vmax",
@@ -120,7 +120,8 @@ const ReactNavbar = _ref => {
     cartIconColorHover = cartIconColor,
     cartIconTransition = 0.5,
     cartIconAnimationTime = searchIconAnimationTime + 0.5,
-    profileIcon = true,
+    profileIcon = false,
+    ProfileIconElement,
     profileIconMargin = "0",
     profileIconUrl = "/Account",
     profileIconSize = "2.5vmax",
@@ -380,7 +381,7 @@ const ReactNavbar = _ref => {
   }, searchIcon ? /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: searchIconUrl,
     onClick: closeBarOnClick
-  }, /*#__PURE__*/_react.default.createElement(_all.ImSearch, {
+  }, /*#__PURE__*/_react.default.createElement(SearchIconElement, {
     id: "searchIcon",
     style: {
       transition: "all ".concat(searchIconTransition, "s"),
@@ -392,7 +393,7 @@ const ReactNavbar = _ref => {
   })) : "", cartIcon ? /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: cartIconUrl,
     onClick: closeBarOnClick
-  }, /*#__PURE__*/_react.default.createElement(_all.FiShoppingBag, {
+  }, /*#__PURE__*/_react.default.createElement(CartIconElement, {
     id: "cartIcon",
     style: {
       transition: "all ".concat(cartIconTransition, "s"),
@@ -404,7 +405,7 @@ const ReactNavbar = _ref => {
   })) : "", profileIcon ? /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: profileIconUrl,
     onClick: closeBarOnClick
-  }, /*#__PURE__*/_react.default.createElement(_all.RiAccountBoxFill, {
+  }, /*#__PURE__*/_react.default.createElement(ProfileIconElement, {
     id: "profileIcon",
     style: {
       transition: "all ".concat(profileIconTransition, "s"),

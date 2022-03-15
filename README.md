@@ -1,3 +1,4 @@
+﻿
 ﻿**[overlay-navbar](https://github.com/meabhisingh/overlay-navbar)**
 
 ##### Navbar component built with React.
@@ -120,9 +121,12 @@ add ReactNavbar Component in your file while passing appropriate props
 | link2AnimationTime       | `link1AnimationTime`               | "To set Animation Time of second Link"                               |
 | link3AnimationTime       | `link2AnimationTime`               | "To set Animation Time of third Link"                                |
 | link4AnimationTime       | `link3AnimationTime`               | "To set Animation Time of fourth Link"                               |
-| searchIcon               | `true`                             | "To set Search Icon to true or false"                                |
-| cartIcon                 | `true`                             | "To set Cart Icon to true or false"                                  |
-| profileIcon              | `true`                             | "To set Profile Icon to true or false"                               |
+| searchIcon               | `true`                             | "To set Search Icon to true or false"  
+SearchIconElement| `"no default value, **required**"` | "Pass Search Icon Here"
+| cartIcon                 | `true`                             | "To set Cart Icon to true or false"                                  | 
+CartIconElement| `"no default value, **required**"` | "Pass Cart Icon Here"
+| profileIcon              | `true`                             | "To set Profile Icon to true or false"            
+ProfileIconElement| `"no default value, **required**"` | "Pass Profile Icon Here"                   |
 | searchIconMargin         | `"0"`                              | "To set Search Icon margin"                                          |
 | cartIconMargin           | `"0"`                              | "To set Cart Icon margin"                                            |
 | profileIconMargin        | `"0"`                              | "To set Profile Icon margin"                                         |
@@ -150,9 +154,10 @@ _Please Must Install **react-router-dom** and **react-icons** before using this 
 ## Created By @meabhisingh
 
 My name is Abhishek Singh, a.k.a 6 pack programmer on YouTube.
-Hire me for a project , **_[Hire](https://www.fiverr.com/tripleayt)_**
+
 
 Youtube - Click [Here](http://youtube.com/c/6packprogrammer)
 Instagram - Click [Here](http://instagram.com/meabhisingh)
 
 LinkedIn - [Click](https://www.linkedin.com/in/meabhisingh/)
+

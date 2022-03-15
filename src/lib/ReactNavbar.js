@@ -1,8 +1,6 @@
 import React, { useState, useRef, Fragment, useEffect } from "react";
 import "./ReactNavbar.min.css";
 import { Link } from "react-router-dom";
-import { ImSearch, FiShoppingBag, RiAccountBoxFill } from "react-icons/all";
-
 const ReactNavbar = ({
   burgerColor = "black",
   burgerColorHover = burgerColor,
@@ -92,7 +90,8 @@ const ReactNavbar = ({
   link3AnimationTime = link2AnimationTime + 0.5,
   link4AnimationTime = link3AnimationTime + 0.5,
 
-  searchIcon = true,
+  searchIcon = false,
+  SearchIconElement,
   searchIconMargin = "0",
   searchIconUrl = "/Search",
   searchIconSize = "2vmax",
@@ -101,7 +100,8 @@ const ReactNavbar = ({
   searchIconTransition = 0.5,
   searchIconAnimationTime = 2,
 
-  cartIcon = true,
+  cartIcon = false,
+  CartIconElement,
   cartIconMargin = "0",
   cartIconUrl = "/Cart",
   cartIconSize = "2vmax",
@@ -110,7 +110,8 @@ const ReactNavbar = ({
   cartIconTransition = 0.5,
   cartIconAnimationTime = searchIconAnimationTime + 0.5,
 
-  profileIcon = true,
+  profileIcon = false,
+  ProfileIconElement,
   profileIconMargin = "0",
   profileIconUrl = "/Account",
   profileIconSize = "2.5vmax",
@@ -417,7 +418,7 @@ const ReactNavbar = ({
         >
           {searchIcon ? (
             <Link to={searchIconUrl} onClick={closeBarOnClick}>
-              <ImSearch
+              <SearchIconElement
                 id="searchIcon"
                 style={{
                   transition: `all ${searchIconTransition}s`,
@@ -435,7 +436,7 @@ const ReactNavbar = ({
           )}
           {cartIcon ? (
             <Link to={cartIconUrl} onClick={closeBarOnClick}>
-              <FiShoppingBag
+              <CartIconElement
                 id="cartIcon"
                 style={{
                   transition: `all ${cartIconTransition}s`,
@@ -453,7 +454,7 @@ const ReactNavbar = ({
           )}
           {profileIcon ? (
             <Link to={profileIconUrl} onClick={closeBarOnClick}>
-              <RiAccountBoxFill
+              <ProfileIconElement
                 id="profileIcon"
                 style={{
                   transition: `all ${profileIconTransition}s`,
