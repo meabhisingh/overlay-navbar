@@ -90,7 +90,7 @@ const ReactNavbar = ({
   link3AnimationTime = link2AnimationTime + 0.5,
   link4AnimationTime = link3AnimationTime + 0.5,
 
-  searchIcon = false,
+  searchIcon = true,
   SearchIconElement,
   searchIconMargin = "0",
   searchIconUrl = "/Search",
@@ -100,7 +100,7 @@ const ReactNavbar = ({
   searchIconTransition = 0.5,
   searchIconAnimationTime = 2,
 
-  cartIcon = false,
+  cartIcon = true,
   CartIconElement,
   cartIconMargin = "0",
   cartIconUrl = "/Cart",
@@ -110,7 +110,7 @@ const ReactNavbar = ({
   cartIconTransition = 0.5,
   cartIconAnimationTime = searchIconAnimationTime + 0.5,
 
-  profileIcon = false,
+  profileIcon = true,
   ProfileIconElement,
   profileIconMargin = "0",
   profileIconUrl = "/Account",
