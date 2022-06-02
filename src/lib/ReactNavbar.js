@@ -9,6 +9,7 @@ const ReactNavbar = ({
   navColor3 = navColor2,
   navColor4 = navColor3,
   logo,
+  logoUrl: "/",
   logoWidth = "100px",
   logoHeight = "unset",
   logoHoverSize = "15px",
@@ -271,6 +272,7 @@ const ReactNavbar = ({
             transition: `all ${nav1Transition}s`,
           }}
         >
+        <Link to={logoUrl}>
           <img
             className="logoReactNavbar"
             src={logo}
@@ -286,6 +288,7 @@ const ReactNavbar = ({
             ref={logoRef}
             alt="Not Passed"
           />
+         </Link>
         </div>
 
         {/* --------------------NAV PART 2-------------------------------- */}
